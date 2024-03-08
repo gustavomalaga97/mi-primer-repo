@@ -64,7 +64,29 @@ li a.active, li a:hover {
     display: none;
 }
 
+.inifooter{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: brown;
+    
+    
+}
+
 /*responsive*/
+@media (max-width: 1178px){
+
+    #titleservice{
+        display: inline-block;
+    }
+    
+    
+}
+.medio{
+    background-color: bisque;
+    
+}
 @media (max-width: 952px){
 .enlace{
     padding-left: 20px;
@@ -133,18 +155,7 @@ z-index: auto;
 
 }
 
-@media (max-width: 1178px){
 
-    #titleservice{
-        display: inline-block;
-    }
-    
-    
-}
-.medio{
-    background-color: bisque;
-    
-}
 
 .tituloprincipal{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -311,7 +322,7 @@ font-size: 40px;
  padding: 40px;
  margin:auto;
  margin-top: 40px;
- margin-bottom: 20px;
+ margin-bottom:0px;
  border-radius: 4px;
  font-family:'calibri';
  color: white;
@@ -342,7 +353,8 @@ box-shadow: 7px 13px 37px #000;
 
 
 .mediorev{
-    background: url("/images/fondokf.jpg");
+    background: url("../images/fondokf.jpg");
+    padding-bottom: 60px;
 }
 
 .titlerec{
@@ -363,6 +375,13 @@ box-shadow: 7px 13px 37px #000;
     font-size: 15px;
     margin-bottom: 5px;
 
+}
+.fooreservas{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: bisque;
+    text-align: center;
+    font-size: 18px;
 }
 
 
@@ -434,3 +453,11 @@ box-shadow: 7px 13px 37px #000;
 
 .maincon{
     background-color:  #e39403;}
+
+.foorcontacto{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: beige;
+    text-align: center;
+    font-size: 20px;
+}
