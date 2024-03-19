@@ -1,3 +1,4 @@
+/*variables*/
 * {
   padding: 0;
   margin: 0;
@@ -43,6 +44,7 @@ nav li a {
   text-transform: uppercase;
 }
 
+/*animaciones*/
 li a.active, li a:hover {
   background-color: cadetblue;
   transition: 0.5s;
@@ -63,7 +65,7 @@ li a.active, li a:hover {
 }
 
 .medio {
-  background-color: bisque;
+  background-color: blanchedalmond;
   padding-bottom: 10px;
   padding-top: 1px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -141,7 +143,7 @@ li a.active, li a:hover {
   }
 }
 .tituloprincipal {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font: normal 45px/1.5 "Open Sans", sans-serif;
   color: brown;
   width: 97%;
   display: flex;

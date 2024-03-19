@@ -1,3 +1,8 @@
+/*variables*/
+$title-font: normal 45px/1.5 'Open Sans', sans-serif; 
+$color-fondo: blanchedalmond;
+$color-titulo: brown;
+
 * {
     padding: 0;
     margin: 0;
@@ -12,7 +17,7 @@
   }
   
   nav {
-    background-color: blanchedalmond;
+    background-color: $color-fondo;
     height: 80px;
     width: 100%;
   }
@@ -46,14 +51,15 @@
       }
     }
   }
-  
-  li a {
-    &.active, &:hover {
+  /*animaciones*/
+  li {
+    a {
+      &.active, &:hover {
       background-color: cadetblue;
       transition: .5s;
     }
   }
-  
+}
   .checkbtn {
     font-size: 40px;
     color: #bb3333ea;
@@ -69,7 +75,7 @@
   }
   
   .medio {
-    background-color: bisque;
+    background-color: $color-fondo;
     padding-bottom: 10px;
     padding-top: 1px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -87,7 +93,7 @@
     padding-bottom: 20px;
     font-size: 20px;
     text-align: center;
-    background-color: brown;
+    background-color: $color-titulo;
   }
   
   /*responsive*/
@@ -160,8 +166,8 @@
   }
   
   .tituloprincipal {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: brown;
+    font:$title-font ;
+    color: $color-titulo;
     width: 97%;
     display: flex;
     justify-content: center;
@@ -225,7 +231,7 @@
   }
   
   .medioservice {
-    background-color: brown;
+    background-color: $color-titulo;
   }
   
   /*container*/
