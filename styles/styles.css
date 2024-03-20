@@ -1,4 +1,5 @@
 /*variables*/
+/*mixin*/
 * {
   padding: 0;
   margin: 0;
@@ -12,10 +13,11 @@ body {
   overflow-x: hidden;
 }
 
+/*mixin aplicado*/
 nav {
   background-color: blanchedalmond;
-  height: 80px;
   width: 100%;
+  height: 80px;
 }
 
 .enlace {
@@ -175,7 +177,7 @@ li a.active, li a:hover {
   text-align: center;
 }
 
-.cafesuchis {
+.cafesuchis, .mapdirect {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,10 +190,8 @@ li a.active, li a:hover {
   background-color: rgb(43, 226, 202);
 }
 
+/*extend*/
 .mapdirect {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 5%;
 }
 

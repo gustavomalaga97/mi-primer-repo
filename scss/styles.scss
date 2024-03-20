@@ -2,6 +2,12 @@
 $title-font: normal 45px/1.5 'Open Sans', sans-serif; 
 $color-fondo: blanchedalmond;
 $color-titulo: brown;
+/*mixin*/
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+
 
 * {
     padding: 0;
@@ -16,10 +22,10 @@ $color-titulo: brown;
     overflow-x: hidden;
   }
   
+  /*mixin aplicado*/
   nav {
     background-color: $color-fondo;
-    height: 80px;
-    width: 100%;
+    @include sizes(100%, 80px)
   }
   
   .enlace {
@@ -210,11 +216,9 @@ $color-titulo: brown;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(43, 226, 202);
   }
-  
+  /*extend*/
   .mapdirect {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend .cafesuchis;
     margin-top: 5%;
   }
   
